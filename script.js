@@ -28,7 +28,8 @@ const boardCheck = () => {
       return;
     }
   });
-  if (!isEmpty) {
+  checkWin();
+  if (!isEmpty && !isgameover) {
     fullBoard = true;
     document.getElementsByClassName("info")[0].innerText = "The game is draw";
   }
